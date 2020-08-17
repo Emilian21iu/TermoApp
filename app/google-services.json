@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "497304143",
+    "firebase_url": "https://termoapp-d995c.firebaseio.com",
+    "project_id": "termoapp-d995c",
+    "storage_bucket": "termoapp-d995c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:497304143:android:eee9877cacc38f53",
+        "android_client_info": {
+          "package_name": "com.example.starnet.termoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "497304143-me0tnbvuau1vhtguju9m96ngelru7e38.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.starnet.termoapp",
+            "certificate_hash": "c724d79e4dffc025766bdcfd7b8e540fe19a8833"
+          }
+        },
+        {
+          "client_id": "497304143-k7sg0t7kftrnq5teqlflqap2lp30m2sl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBX0Q7oMz69yR7bW_rWjUDHgytEy0Lc7Fs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "497304143-k7sg0t7kftrnq5teqlflqap2lp30m2sl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

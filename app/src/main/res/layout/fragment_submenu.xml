@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1B5F74"
+    android:padding="4sp">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#74121224"
+        android:text="Meniu"
+        android:textAlignment="center"
+        android:textSize="36sp" />
+
+    <RelativeLayout
+        android:id="@+id/calorifer_l"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="9dp">
+
+        <ImageView
+            android:id="@+id/calorifer_img"
+            android:layout_width="@dimen/icon_dim"
+            android:layout_height="@dimen/icon_dim"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8sp"
+            android:layout_marginTop="32sp"
+            android:src="@drawable/radiator_icon" />
+
+        <TextView
+            android:id="@+id/calorifer_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8sp"
+            android:layout_marginEnd="8sp"
+            android:layout_toRightOf="@id/calorifer_img"
+            android:text="Calorifer"
+            android:textSize="20sp" />
+
+        <Switch
+            android:id="@+id/calorifer_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8sp"
+            android:layout_marginEnd="8sp"
+            android:layout_toRightOf="@id/calorifer_lbl" />
+
+        <TextView
+            android:id="@+id/calorifer_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8sp"
+            android:layout_marginEnd="8sp"
+            android:layout_toLeftOf="@id/pm_btns1"
+            android:text="60 °C"
+            android:textSize="@dimen/val_text_size" />
+
+        <RelativeLayout
+            android:id="@+id/pm_btns1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="4sp">
+
+            <Button
+                android:id="@+id/calorifer_plus"
+                android:layout_width="@dimen/pm_btn_dim"
+                android:layout_height="@dimen/pm_btn_dim"
+                android:alpha="0.9"
+                android:text="+"
+                android:textAlignment="center"
+                android:textSize="@dimen/pm_btn_text_size" />
+
+            <Button
+                android:id="@+id/calorifer_minus"
+                android:layout_width="@dimen/pm_btn_dim"
+                android:layout_height="@dimen/pm_btn_dim"
+                android:layout_below="@id/calorifer_plus"
+                android:alpha="0.9"
+                android:text="-"
+                android:textAlignment="center"
+                android:textSize="@dimen/pm_btn_text_size" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/robinet_l"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calorifer_l">
+
+        <ImageView
+            android:id="@+id/robinet_img"
+            android:layout_width="@dimen/icon_dim"
+            android:layout_height="@dimen/icon_dim"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8sp"
+            android:layout_marginTop="32sp"
+            android:src="@drawable/tap_icon" />
+
+        <TextView
+            android:id="@+id/robinet_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8sp"
+            android:layout_marginEnd="8sp"
+            android:layout_toRightOf="@id/robinet_img"
+            android:text="Robinet"
+            android:textSize="20sp" />
+
+        <Switch
+            android:id="@+id/robinet_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8sp"
+            android:layout_marginEnd="8sp"
+            android:layout_toRightOf="@id/robinet_lbl" />
+
+        <TextView
+            android:id="@+id/robinet_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8sp"
+            android:layout_marginEnd="8sp"
+            android:layout_toLeftOf="@+id/pm_btns2"
+            android:text="55 °C"
+            android:textSize="@dimen/val_text_size" />
+
+        <RelativeLayout
+            android:id="@+id/pm_btns2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="4sp">
+
+            <Button
+                android:id="@+id/robinet_plus"
+                android:layout_width="@dimen/pm_btn_dim"
+                android:layout_height="@dimen/pm_btn_dim"
+                android:alpha="0.9"
+                android:text="+"
+                android:textAlignment="center"
+                android:textSize="@dimen/pm_btn_text_size" />
+
+            <Button
+                android:id="@+id/robinet_minus"
+                android:layout_width="@dimen/pm_btn_dim"
+                android:layout_height="@dimen/pm_btn_dim"
+                android:layout_below="@id/robinet_plus"
+                android:alpha="0.9"
+                android:text="-"
+                android:textAlignment="center"
+                android:textSize="@dimen/pm_btn_text_size" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sep1"
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="4sp"
+            android:layout_marginEnd="4sp"
+            android:background="@android:color/black"></RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/incalzire_l"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/robinet_l">
+
+        <ImageView
+            android:id="@+id/incalzire_img"
+            android:layout_width="@dimen/icon_dim"
+            android:layout_height="@dimen/icon_dim"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8sp"
+            android:layout_marginTop="32sp"
+            android:src="@drawable/heating_icon" />
+
+        <TextView
+            android:id="@+id/incalzire_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8sp"
+            android:layout_marginEnd="8sp"
+            android:layout_toRightOf="@id/incalzire_img"
+            android:text="Incalzire"
+            android:textSize="20sp" />
+
+        <Switch
+            android:id="@+id/incalzire_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8sp"
+            android:layout_marginEnd="8sp"
+            android:layout_toRightOf="@id/incalzire_lbl" />
+
+        <TextView
+            android:id="@+id/incalzire_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8sp"
+            android:layout_marginEnd="8sp"
+            android:layout_toLeftOf="@id/pm_btns3"
+            android:text="60 %"
+            android:textSize="@dimen/val_text_size" />
+
+        <RelativeLayout
+            android:id="@+id/pm_btns3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="4sp">
+
+            <Button
+                android:id="@+id/incalzire_plus"
+                android:layout_width="@dimen/pm_btn_dim"
+                android:layout_height="@dimen/pm_btn_dim"
+                android:alpha="0.9"
+                android:text="+"
+                android:textAlignment="center"
+                android:textSize="@dimen/pm_btn_text_size" />
+
+            <Button
+                android:id="@+id/incalzire_minus"
+                android:layout_width="@dimen/pm_btn_dim"
+                android:layout_height="@dimen/pm_btn_dim"
+                android:layout_below="@id/incalzire_plus"
+                android:alpha="0.9"
+                android:text="-"
+                android:textAlignment="center"
+                android:textSize="@dimen/pm_btn_text_size" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sep2"
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="4sp"
+            android:layout_marginEnd="4sp"
+            android:background="@android:color/black"></RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/presiune_l"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/incalzire_l">
+
+        <ImageView
+            android:id="@+id/presiune_img"
+            android:layout_width="@dimen/icon_dim"
+            android:layout_height="@dimen/icon_dim"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8sp"
+            android:layout_marginTop="32sp"
+            android:src="@drawable/pressure_icon" />
+
+        <TextView
+            android:id="@+id/presiune_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8sp"
+            android:layout_marginEnd="8sp"
+            android:layout_toRightOf="@id/presiune_img"
+            android:text="Presiune"
+            android:textSize="20sp" />
+
+        <Switch
+            android:id="@+id/presiune_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8sp"
+            android:layout_marginEnd="8sp"
+            android:layout_toRightOf="@id/presiune_lbl" />
+
+        <TextView
+            android:id="@+id/presiune_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8sp"
+            android:layout_marginEnd="8sp"
+            android:layout_toLeftOf="@id/pm_btns4"
+            android:text="1.2 bar"
+            android:textSize="@dimen/val_text_size" />
+
+        <RelativeLayout
+            android:id="@+id/pm_btns4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="4sp">
+
+            <Button
+                android:id="@+id/presiune_plus"
+                android:layout_width="@dimen/pm_btn_dim"
+                android:layout_height="@dimen/pm_btn_dim"
+                android:alpha="0.9"
+                android:text="+"
+                android:textAlignment="center"
+                android:textSize="@dimen/pm_btn_text_size" />
+
+            <Button
+                android:id="@+id/presiune_minus"
+                android:layout_width="@dimen/pm_btn_dim"
+                android:layout_height="@dimen/pm_btn_dim"
+                android:layout_below="@id/presiune_plus"
+                android:alpha="0.9"
+                android:text="-"
+                android:textAlignment="center"
+                android:textSize="@dimen/pm_btn_text_size" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sep3"
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="4sp"
+            android:layout_marginEnd="4sp"
+            android:background="@android:color/black"></RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1B5F74">
+
+    <TextView
+        android:id="@+id/title_mc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="16sp"
+        android:background="#74121224"
+        android:text="Selecteaza profil"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_mc"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="0dp"
+        android:background="#1B5F74"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/left_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/title_mc"
+            android:layout_marginRight="20sp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/none_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/mc_Bottom_margin">
+
+                <ImageButton
+                    android:id="@+id/none_img"
+                    android:layout_width="@dimen/mc_img_width"
+                    android:layout_height="@dimen/mc_img_height"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:adjustViewBounds="false"
+                    android:background="@android:color/transparent"
+                    android:cropToPadding="false"
+                    android:src="@drawable/none_icon" />
+
+                <TextView
+                    android:id="@+id/none_lbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/none_img"
+                    android:layout_centerHorizontal="true"
+                    android:text="Fara mod"
+                    android:textSize="@dimen/mc_text_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/plecat_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/mc_Bottom_margin">
+
+                <ImageButton
+                    android:id="@+id/plecat_img"
+                    android:layout_width="@dimen/mc_img_width"
+                    android:layout_height="@dimen/mc_img_height"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/away_icon_gray" />
+
+                <TextView
+                    android:id="@+id/plecat_lbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/plecat_img"
+                    android:layout_centerHorizontal="true"
+                    android:text="Plecat"
+                    android:textSize="@dimen/mc_text_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/vacanta_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/mc_Bottom_margin">
+
+                <ImageButton
+                    android:id="@+id/vacanta_img"
+                    android:layout_width="@dimen/mc_img_width"
+                    android:layout_height="@dimen/mc_img_height"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/vacancy_icon_gray" />
+
+                <TextView
+                    android:id="@+id/vacanta_lbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/vacanta_img"
+                    android:layout_centerHorizontal="true"
+                    android:text="Vacanta"
+                    android:textSize="@dimen/mc_text_size" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/alexa_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/mc_Bottom_margin">
+
+                <ImageButton
+                    android:id="@+id/alexa_img"
+                    android:layout_width="@dimen/mc_img_width"
+                    android:layout_height="@dimen/mc_img_height"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/alexa_icon_grey" />
+
+                <TextView
+                    android:id="@+id/alexa_lbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/alexa_img"
+                    android:layout_centerHorizontal="true"
+                    android:text="Alexa"
+                    android:textSize="@dimen/mc_text_size" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/right_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20sp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/auto_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/mc_Bottom_margin">
+
+                <ImageButton
+                    android:id="@+id/auto_img"
+                    android:layout_width="@dimen/mc_img_width"
+                    android:layout_height="@dimen/mc_img_height"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/auto_icon_gray" />
+
+                <TextView
+                    android:id="@+id/auto_lbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/auto_img"
+                    android:layout_centerHorizontal="true"
+                    android:text="Automat"
+                    android:textSize="@dimen/mc_text_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/vara_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/mc_Bottom_margin">
+
+                <ImageButton
+                    android:id="@+id/vara_img"
+                    android:layout_width="@dimen/mc_img_width"
+                    android:layout_height="@dimen/mc_img_height"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/vara_icon_gray" />
+
+                <TextView
+                    android:id="@+id/vara_lbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/vara_img"
+                    android:layout_centerHorizontal="true"
+                    android:text="Vara"
+                    android:textSize="@dimen/mc_text_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/antiinghet_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/mc_Bottom_margin">
+
+                <ImageButton
+                    android:id="@+id/antiinghet_img"
+                    android:layout_width="@dimen/mc_img_width"
+                    android:layout_height="@dimen/mc_img_height"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/antifreze_icon_gray" />
+
+                <TextView
+                    android:id="@+id/antiinghet_lbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/antiinghet_img"
+                    android:layout_centerHorizontal="true"
+                    android:text="Antiinghet"
+                    android:textSize="@dimen/mc_text_size" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

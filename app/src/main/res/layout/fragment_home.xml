@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/gray">
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/restricted"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0D8FDD"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/lbl_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
+            android:text="Data"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/lbl_ora"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/lbl_data"
+            android:layout_weight="1"
+            android:text="Ora"
+            android:textAlignment="center"
+            android:textColor="#FDFCFC"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lbl_temperatura_out"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="Temperatura"
+                android:textAlignment="center"
+                android:textColor="#F3F0EF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/lbl_umiditate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4sp"
+                android:text="Umiditate"
+                android:textAlignment="center"
+                android:textColor="#FFFDFC"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/center_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_layout"
+        android:layout_marginTop="64sp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/lbl_temperatura_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="25 °C"
+            android:textAlignment="viewEnd"
+            android:textColor="#C2185B"
+            android:textSize="45sp" />
+
+        <ImageButton
+            android:id="@+id/btn_documentatie"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_help_black_24dp"
+            android:tooltipText="get help" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lbl_temperatura_pref"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/center_layout"
+        android:layout_centerHorizontal="true"
+        android:text="48 °C until 20:00 AM"
+        android:textColor="#F57C00"
+        android:textSize="24sp" />
+
+    <ImageButton
+        android:id="@+id/btn_grafic"
+        android:layout_width="90sp"
+        android:layout_height="90sp"
+        android:layout_below="@id/lbl_temperatura_pref"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="312dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/bar_chart_icon" />
+
+    <ToggleButton
+        android:id="@+id/btn_power"
+        android:layout_width="62dp"
+        android:layout_height="63dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/custom_buton"
+        android:text="ToggleButton"
+        android:textColor="#0E0A09"
+        android:textOff=""
+        android:textOn=""
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <WebView
+        android:id="@+id/webv_grafic"
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:layout_below="@id/lbl_temperatura_pref"
+        android:layout_marginTop="30sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/gas_alert_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="36sp"
+        android:layout_marginBottom="24sp"
+        android:layout_toRightOf="@id/btn_power"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_gas_alert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Scapari de gaz"
+            android:src="@drawable/ic_warning_red_56dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alerta scapari de gaz"
+            android:textColor="@color/red"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="67dp"
+        android:layout_height="36dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="47dp"
+        android:background="@drawable/buttonlogout"
+        android:text="LogOut" />
+
+</RelativeLayout>

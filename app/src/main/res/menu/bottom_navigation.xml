@@ -1,0 +1,30 @@
+
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Home"
+        android:visible="true"
+        app:showAsAction="withText" />
+
+    <item
+        android:id="@+id/nav_notifications"
+        android:checkable="true"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="Notifications"
+        android:visible="true" />
+
+    <item
+        android:id="@+id/nav_submenu"
+        android:icon="@drawable/ic_menu_black_24dp"
+        android:title="Meniu" />
+
+    <item android:id="@+id/nav_mode"
+        android:icon="@drawable/ic_view_module_black_24dp"
+        android:title="Mod confort"/>
+
+
+
+</menu>

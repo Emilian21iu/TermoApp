@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/notifications_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1B5F74">
+
+    <TextView
+        android:id="@+id/title_lbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="8sp"
+        android:background="#74121224"
+        android:text="Notificari"
+        android:textAlignment="center"
+        android:textSize="36sp" />
+
+    <RelativeLayout
+        android:id="@+id/calorifer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_lbl">
+
+        <ImageView
+            android:id="@+id/img_calorifer"
+            android:layout_width="48sp"
+            android:layout_height="48sp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32sp"
+            android:layout_marginEnd="8sp"
+            android:src="@drawable/radiator_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lbl_calorifer"
+            android:layout_width="90sp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32sp"
+            android:layout_marginEnd="8sp"
+            android:layout_toRightOf="@id/img_calorifer"
+            android:text="Calorifer"
+            android:textSize="20sp" />
+
+        <Switch
+            android:id="@+id/switch_calorifer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32sp"
+            android:layout_marginEnd="8sp"
+            android:layout_toRightOf="@id/values_calorifer"
+            android:checked="false"
+            tools:checked="false" />
+
+        <TextView
+            android:id="@+id/values_calorifer"
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8sp"
+            android:layout_toRightOf="@id/lbl_calorifer"
+            android:text="40/ 50"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/robinet_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calorifer_layout">
+
+        <ImageView
+            android:id="@+id/img_robinet"
+            android:layout_width="48sp"
+            android:layout_height="48sp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32sp"
+            android:layout_marginEnd="8sp"
+            android:src="@drawable/tap_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lbl_robinet"
+            android:layout_width="90sp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32sp"
+            android:layout_marginEnd="8sp"
+            android:layout_toRightOf="@id/img_robinet"
+            android:text="Robinet"
+            android:textSize="20sp" />
+
+        <Switch
+            android:id="@+id/switch_robinet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32sp"
+            android:layout_marginEnd="8sp"
+            android:layout_toRightOf="@id/values_robinet"
+            android:checked="false"
+            tools:checked="false" />
+
+        <TextView
+            android:id="@+id/values_robinet"
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8sp"
+            android:layout_toRightOf="@id/lbl_robinet"
+            android:text="40/ 50"
+            android:textSize="20sp" />
+
+
+        <RelativeLayout
+            android:id="@+id/separator1"
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="4sp"
+            android:layout_marginEnd="4sp"
+            android:background="@android:color/black" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/incalzire_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/robinet_layout">
+
+        <ImageView
+            android:id="@+id/img_incalzire"
+            android:layout_width="48sp"
+            android:layout_height="48sp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32sp"
+            android:layout_marginEnd="8sp"
+            android:src="@drawable/heating_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lbl_incalzire"
+            android:layout_width="90sp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32sp"
+            android:layout_marginEnd="8sp"
+            android:layout_toRightOf="@id/img_incalzire"
+            android:text="Incalzire"
+            android:textSize="20sp" />
+
+        <Switch
+            android:id="@+id/switch_incalzire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32sp"
+            android:layout_marginEnd="8sp"
+            android:layout_toRightOf="@id/values_incalzire"
+            android:checked="false"
+            tools:checked="false" />
+
+        <TextView
+            android:id="@+id/values_incalzire"
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8sp"
+            android:layout_toRightOf="@id/lbl_incalzire"
+            android:text="40/ 50"
+            android:textSize="20sp" />
+
+
+        <RelativeLayout
+            android:id="@+id/separator2"
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="4sp"
+            android:layout_marginEnd="4sp"
+            android:background="@android:color/black" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/presiune_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/incalzire_layout">
+
+        <ImageView
+            android:id="@+id/img_presiune"
+            android:layout_width="48sp"
+            android:layout_height="48sp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32sp"
+            android:layout_marginEnd="8sp"
+            android:src="@drawable/pressure_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lbl_presiune"
+            android:layout_width="90sp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32sp"
+            android:layout_marginEnd="8sp"
+            android:layout_toRightOf="@id/img_presiune"
+            android:text="Presiune"
+            android:textSize="20sp" />
+
+        <Switch
+            android:id="@+id/switch_presiune"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32sp"
+            android:layout_marginEnd="8sp"
+            android:layout_toRightOf="@id/values_presiune"
+            android:checked="false"
+            tools:checked="false" />
+
+        <TextView
+            android:id="@+id/values_presiune"
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8sp"
+            android:layout_toRightOf="@id/lbl_presiune"
+            android:text="40/ 50"
+            android:textSize="20sp" />
+
+
+        <RelativeLayout
+            android:id="@+id/separator3"
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="4sp"
+            android:layout_marginEnd="4sp"
+            android:background="@android:color/black" />
+    </RelativeLayout>
+
+</RelativeLayout>
